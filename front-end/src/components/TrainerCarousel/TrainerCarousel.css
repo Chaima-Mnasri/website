@@ -1,0 +1,60 @@
+.trainer-carousel {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f4f4;
+  }
+  
+  .trainer-carousel h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-carousel p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .trainer-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .trainer-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .trainer-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+  
+  .trainer-card h4 {
+    color: #f96f6f;
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .trainer-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .social-icons a {
+    margin: 0 5px;
+    color: #555;
+    font-size: 1rem;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #f96f6f;
+  }
+  
