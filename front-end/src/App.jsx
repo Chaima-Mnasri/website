@@ -1,5 +1,5 @@
 import React from 'react';
-import {Header, Info, Topics, Blog, Testimonials, PricingPlans,ContactFormWithMap,TrainerCarousel, Footer} from './components';
+import {Header, Info, Topics, Blog, Testimonials, PricingPlans,ContactFormWithMap,TrainerCarousel,WhyChooseUs, Footer} from './components';
 
 const App = () => {
   return (
@@ -12,6 +12,7 @@ const App = () => {
     <PricingPlans/>
     <ContactFormWithMap/>
     <TrainerCarousel/>
+    <WhyChooseUs/>
     <Footer />
     </>
   )
