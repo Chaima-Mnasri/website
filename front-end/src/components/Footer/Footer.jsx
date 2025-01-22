@@ -13,16 +13,29 @@ const Footer = () => {
             </a>
 
             <div className="social-icons">
-              <a href="#">
-                <img src={facebookLogo} alt="" />
+            
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={facebookLogo} alt="Facebook" />
               </a>
 
-              <a href="#">
-                <img src={twitterLogo} alt="" />
+              <a
+                href="https://www.twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={twitterLogo} alt="Twitter" />
               </a>
 
-              <a href="#">
-                <img src={instagramLogo} alt="" />
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src={instagramLogo} alt="Instagram" />
               </a>
             </div>
 
@@ -48,11 +61,11 @@ const Footer = () => {
             <h3>Contact Us</h3>
             <ul>
               <li>
-                <a href="#">contact@email.com</a>
+                <a href="mailto:contact@email.com">contact@email.com</a>
               </li>
 
               <li>
-                <a href="#">+1 999 9999 999</a>
+                <a href="tel:+19999999999">+1 999 9999 999</a>
               </li>
             </ul>
           </div>
