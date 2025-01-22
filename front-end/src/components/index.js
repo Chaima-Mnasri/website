@@ -7,7 +7,8 @@ import ContactFormWithMap from "./ContactFormWithMap/ContactFormWithMap";
 import TrainerCarousel from "./TrainerCarousel/TrainerCarousel";
 import Testimonials from "./Testimonials/Testimonials";
 import WhyChooseUs from "./Why Choose Us/Why Choose Us";
+import video from "./videos/video";
 import Footer from "./Footer/Footer";
 
 
-export { Header, Topics, Info, Blog, Testimonials,PricingPlans,ContactFormWithMap,TrainerCarousel,WhyChooseUs, Footer};
+export { Header, Topics, Info, Blog, Testimonials,PricingPlans,ContactFormWithMap,TrainerCarousel,WhyChooseUs,video, Footer};

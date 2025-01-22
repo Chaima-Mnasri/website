@@ -4,6 +4,7 @@ import { menuIcon, closeIcon } from "../../assets";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
+  const [isDropdownActive, setDropdownActive] = useState(false);
 
   return (
     <>
@@ -15,6 +16,31 @@ const Navbar = () => {
         <ul>
           <li>
             <a href="#topics">Course Details</a>
+          </li>
+
+          {/* Fitnessstudio-Orte Dropdown */}
+          <li
+            className="dropdown"
+            onMouseEnter={() => setDropdownActive(true)}
+            onMouseLeave={() => setDropdownActive(false)}
+          >
+            Fitnessstudios
+            {isDropdownActive && (
+              <ul className="dropdown-menu">
+                <li>
+                  <a href="#berlin">Berlin</a>
+                </li>
+                <li>
+                  <a href="#hamburg">Hamburg</a>
+                </li>
+                <li>
+                  <a href="#muenchen">München</a>
+                </li>
+                <li>
+                  <a href="#stuttgart">Stuttgart</a>
+                </li>
+              </ul>
+            )}
           </li>
 
           <li>
@@ -35,6 +61,7 @@ const Navbar = () => {
         </div>
       </nav>
 
+      {/* Mobile Menu */}
       <div className={`mobile-menu-container ${isActive ? "active" : ""}`}>
         <div onClick={() => setIsActive(false)} className="close-icon">
           <img src={closeIcon} alt="" />
@@ -63,6 +90,33 @@ const Navbar = () => {
             <a href="#testimonials" onClick={() => setIsActive(false)}>
               Testimonials
             </a>
+          </li>
+
+          {/* Fitnessstudio-Orte für Mobile */}
+          <li className="dropdown-mobile">
+            <span>Fitnessstudios</span>
+            <ul className="dropdown-menu">
+              <li>
+                <a href="#berlin" onClick={() => setIsActive(false)}>
+                  Berlin
+                </a>
+              </li>
+              <li>
+                <a href="#hamburg" onClick={() => setIsActive(false)}>
+                  Hamburg
+                </a>
+              </li>
+              <li>
+                <a href="#muenchen" onClick={() => setIsActive(false)}>
+                  München
+                </a>
+              </li>
+              <li>
+                <a href="#stuttgart" onClick={() => setIsActive(false)}>
+                  Stuttgart
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </div>
